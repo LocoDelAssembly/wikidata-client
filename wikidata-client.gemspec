@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- spec/*`.split("\n")
   s.require_paths = ["lib"]
 
-  s.add_dependency("faraday", "~> 0.9")
-  s.add_dependency("faraday_middleware", "~> 0.9")
-  s.add_dependency("hashie", "~> 3.3")
+  s.add_dependency("faraday", ">= 0.9.0", "< 2.0")
+  s.add_dependency("faraday_middleware", ">= 0.9.0", "< 2.0")
+  s.add_dependency("hashie", ">= 3.3", "< 5.0")
   s.add_dependency("excon", "~> 0.40")
 
   s.add_development_dependency("rspec", "~> 3.1")
